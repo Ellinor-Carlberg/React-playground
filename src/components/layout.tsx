@@ -1,4 +1,30 @@
-/* import React, { CSSProperties } from 'react';
+import * as React from "react";
+import Navbar from './navbar'
+export default function Layout() {
+    return(
+        <h1 style={style}> hej
+        <Navbar />
+     </h1>
+            
+    );
+}
+
+
+
+const centeredContent: React.CSSProperties = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%'
+    };
+
+    const theme: React.CSSProperties = {
+        color: 'green'
+    }
+
+    const style = { ...centeredContent, ...theme }
+    
+    /* import React, { CSSProperties } from 'react';
 
 /**React function component */ 
 /* export deafult function Header() {
