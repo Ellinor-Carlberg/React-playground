@@ -1,29 +1,21 @@
 import * as React from "react";
-import Navbar from './navbar'
+import Navbar from './navbar';
+import Content from './content'
+
 export default function Layout() {
     return(
-        <h1 style={style}> hej
+        
+        <div>
         <Navbar />
-     </h1>
-            
+        <Content />
+         </div>     
     );
 }
 
 
 
-const centeredContent: React.CSSProperties = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%'
-    };
 
-    const theme: React.CSSProperties = {
-        color: 'green'
-    }
-
-    const style = { ...centeredContent, ...theme }
-    
+   /* lägg in style och grid eller flex */
     /* import React, { CSSProperties } from 'react';
 
 /**React function component */ 
